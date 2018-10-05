@@ -1,4 +1,5 @@
 import colorama
+colorama.init()
 
 def black_bg(text):     return colorama.Back.BLACK   +text+colorama.Back.RESET
 def red_bg(text):       return colorama.Back.RED     +text+colorama.Back.RESET

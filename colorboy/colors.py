@@ -1,4 +1,5 @@
 import colorama
+colorama.init()
 
 def black(text):        return colorama.Fore.BLACK   +text+colorama.Fore.RESET
 def red(text):          return colorama.Fore.RED     +text+colorama.Fore.RESET
