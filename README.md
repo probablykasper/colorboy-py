@@ -62,10 +62,10 @@ bright
 ### Get started
 
 1. Install Python (Python 3.7 works, probably other versions too)
-2. Install [Poetry](https://poetry.eustace.io). Poetry is used to manage dependencies, the virtual environment and publishing to PyPI, so it's worth learning.
-3. Run `poetry install` to install Python package dependencies.
+2. Install [Poetry](https://poetry.eustace.io). Poetry is used to manage dependencies, the virtual environment and publishing to PyPI, so it's worth learning
+3. Run `poetry install` to install Python package dependencies
 
-I recommend running poetry config virtualenvs.in-project true. This command makes Poetry create your Python virtual environment inside the project folder, so you'll be able to easily delete it. Additionally, it lets VSCode's Python extension detect the virtual environment if you set the python.pythonPath setting to ${workspaceFolder}/.venv/bin/python in your settings.
+I recommend running `poetry config virtualenvs.in-project true`, which makes Poetry store your Python virtual environment inside the project folder. Additionally, it lets VSCode's Python extension detect the virtual environment if you set the `python.pythonPath` setting to `${workspaceFolder}/.venv/bin/python` in your settings.
 
 ### Running
 
