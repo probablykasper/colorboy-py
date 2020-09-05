@@ -2,9 +2,9 @@
 name = "colorboy"
 version = "1.0.1"
 description = "Easily add color to your strings"
-authors = ["KH <kasperkh.kh@gmail.com>"]
+authors = ["kasper.space"]
 readme = 'README.md'
-repository = "https://github.com/spectralkh/colorboy-py"
+repository = "https://github.com/probablykasper/colorboy-py"
 keywords = ['colorboy', 'color', 'terminal', 'chalk', 'colorama', 'termcolor']
 
 [tool.poetry.dependencies]
