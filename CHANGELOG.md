@@ -1,3 +1,6 @@
+## 1.0.3 - 2021 Mar 12
+- No more dependencies
+
 ## 1.0.2 - 2020 Sep 5
 - Updated dependencies and project metadata
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "colorboy"
-version = "1.0.2"
+version = "1.0.3"
 description = "Easily add color to your strings"
 authors = ["kasper.space"]
 readme = 'README.md'
