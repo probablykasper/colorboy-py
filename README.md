@@ -14,10 +14,12 @@ pip install colorboy
 import colorboy as cb
 print(cb.cyan('Globgogabgalab'))
 
-from colorboy import cyan, red # import a specific colors, bg_colors and styles
-print(cyan('Piz')+red('za'))
+# import specific colors, bg_colors and styles
+from colorboy import white_bg, black
+print(white_bg(black('Pog')))
 
-from colorboy import * # import all colors, bg_colors and styles
+# import everything
+from colorboy import *
 print(green('Mayonnaise'))
 
 from colorboy.colors import * # import all colors

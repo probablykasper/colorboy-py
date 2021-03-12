@@ -1,14 +1,16 @@
-import colorama
-colorama.init()
+def generate(code):
+  return '\033[' + str(code) + 'm'
 
-def black_bg(text):     return colorama.Back.BLACK   +text+colorama.Back.RESET
-def red_bg(text):       return colorama.Back.RED     +text+colorama.Back.RESET
-def green_bg(text):     return colorama.Back.GREEN   +text+colorama.Back.RESET
-def yellow_bg(text):    return colorama.Back.YELLOW  +text+colorama.Back.RESET
-def blue_bg(text):      return colorama.Back.BLUE    +text+colorama.Back.RESET
-def magenta_bg(text):   return colorama.Back.MAGENTA +text+colorama.Back.RESET
-def cyan_bg(text):      return colorama.Back.CYAN    +text+colorama.Back.RESET
-def white_bg(text):     return colorama.Back.WHITE   +text+colorama.Back.RESET
+reset_bg = generate(49)
+
+def black_bg(text):   return generate(40)+text+reset_bg
+def red_bg(text):     return generate(41)+text+reset_bg
+def green_bg(text):   return generate(42)+text+reset_bg
+def yellow_bg(text):  return generate(43)+text+reset_bg
+def blue_bg(text):    return generate(44)+text+reset_bg
+def magenta_bg(text): return generate(45)+text+reset_bg
+def cyan_bg(text):    return generate(46)+text+reset_bg
+def white_bg(text):   return generate(47)+text+reset_bg
 
 __all__ = [
     'black_bg',
@@ -18,5 +20,5 @@ __all__ = [
     'blue_bg',
     'magenta_bg',
     'cyan_bg',
-    'white_bg'
+    'white_bg',
 ]

@@ -1,14 +1,16 @@
-import colorama
-colorama.init()
+def generate(code):
+  return '\033[' + str(code) + 'm'
 
-def black(text):        return colorama.Fore.BLACK   +text+colorama.Fore.RESET
-def red(text):          return colorama.Fore.RED     +text+colorama.Fore.RESET
-def green(text):        return colorama.Fore.GREEN   +text+colorama.Fore.RESET
-def yellow(text):       return colorama.Fore.YELLOW  +text+colorama.Fore.RESET
-def blue(text):         return colorama.Fore.BLUE    +text+colorama.Fore.RESET
-def magenta(text):      return colorama.Fore.MAGENTA +text+colorama.Fore.RESET
-def cyan(text):         return colorama.Fore.CYAN    +text+colorama.Fore.RESET
-def white(text):        return colorama.Fore.WHITE   +text+colorama.Fore.RESET
+reset = generate(39)
+
+def black(text):    return generate(30)+text+reset
+def red(text):      return generate(31)+text+reset
+def green(text):    return generate(32)+text+reset
+def yellow(text):   return generate(33)+text+reset
+def blue(text):     return generate(34)+text+reset
+def magenta(text):  return generate(35)+text+reset
+def cyan(text):     return generate(36)+text+reset
+def white(text):    return generate(37)+text+reset
 
 __all__ = [
     'black',
@@ -18,5 +20,5 @@ __all__ = [
     'blue',
     'magenta',
     'cyan',
-    'white'
+    'white',
 ]

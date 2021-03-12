@@ -8,8 +8,8 @@ repository = "https://github.com/probablykasper/colorboy-py"
 keywords = ['colorboy', 'color', 'terminal', 'chalk', 'colorama', 'termcolor']
 
 [tool.poetry.dependencies]
-python = "^3.5"
-colorama = "^0.4.3"
 
 [tool.poetry.dev-dependencies]
-pylint = "^2.6"
+
+[tool.poetry.scripts]
+test = 'test:test'
